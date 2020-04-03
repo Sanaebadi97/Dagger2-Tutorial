@@ -1,5 +1,7 @@
 package info.sanaebadi.dagger_tutorial.model
 
-class River {
+import javax.inject.Inject
+
+class River  @Inject constructor(){
 
 }

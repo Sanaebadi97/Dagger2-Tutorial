@@ -1,6 +1,8 @@
 package info.sanaebadi.dagger_tutorial.model
 
-class Farm {
+import javax.inject.Inject
+
+class Farm   @Inject constructor() {
 
 
 }
