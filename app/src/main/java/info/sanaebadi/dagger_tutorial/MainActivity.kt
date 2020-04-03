@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var coffee: Coffee
 
+    @Inject
+    lateinit var coffee2: Coffee
+
     companion object {
         const val TAG: String = "MainActivity"
 
@@ -40,10 +43,10 @@ class MainActivity : AppCompatActivity() {
 
         coffeeComponent.inject(this)
 
-        coffee.getCoffeeCup()
+       var getCoffee= coffee.getCoffeeCup()
 //        coffee.connectElectricity()
 
-        Log.i(TAG, coffee.getCoffeeCup())
+        Log.i(TAG, "$getCoffee and \n ${coffee.farm} \n ${coffee2.farm}")
 
     }
 }
