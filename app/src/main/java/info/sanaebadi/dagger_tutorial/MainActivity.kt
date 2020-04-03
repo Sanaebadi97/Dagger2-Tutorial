@@ -14,10 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val river=River()
-        val farm=Farm()
 
-        val coffee=Coffee(river,farm)
 
     }
 }
