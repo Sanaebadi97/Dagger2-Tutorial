@@ -39,12 +39,16 @@ class MainActivity : AppCompatActivity() {
        // coffeeComponent = DaggerCoffeeComponent.create()
         //coffeeComponent.getCoffee().getCoffeeCup()
       //  coffeeComponent = DaggerCoffeeComponent.builder().coffeeModule(CoffeeModule(3)).build()
-        coffeeComponent = DaggerCoffeeComponent.builder().sugar(4).milk(8).build()
+//        coffeeComponent = DaggerCoffeeComponent.builder().sugar(4).milk(8).build()
+//        coffee.connectElectricity()
+
+        coffeeComponent=   (application as MainApplication).getCoffeeComponent()
+
+
 
         coffeeComponent.inject(this)
 
        var getCoffee= coffee.getCoffeeCup()
-//        coffee.connectElectricity()
 
         Log.i(TAG, "$getCoffee and \n ${coffee.farm} \n ${coffee2.farm}")
 
