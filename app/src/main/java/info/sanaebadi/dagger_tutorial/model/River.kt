@@ -13,6 +13,8 @@ import javax.inject.Inject
 
 //IT IS LOCK CLASS AND FOR VIEW
 
+//we can not edit this class and add @SingleTon so we add that in module
+
 class River  constructor(){
 
     fun getWater():String{
