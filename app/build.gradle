@@ -45,4 +45,5 @@ dependencies {
     implementation "com.google.dagger:dagger-android:$ext.dagger"
     kapt "com.google.dagger:dagger-android-processor:$ext.dagger"
     kapt "com.google.dagger:dagger-compiler:$ext.dagger"
+    implementation "com.google.dagger:dagger:$ext.dagger"
 }
