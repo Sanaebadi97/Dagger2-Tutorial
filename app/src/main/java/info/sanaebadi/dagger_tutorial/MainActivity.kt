@@ -11,6 +11,13 @@ import javax.inject.Inject
 class MainActivity : AppCompatActivity() {
 
 
+    /*
+
+    when use @Inject on constructor we have constructor Injection
+    if use @Inject on Field we have Field Injection
+    and when on Method we have Method Injection
+
+     */
     lateinit var coffeeComponent: CoffeeComponent
 
     @Inject
@@ -25,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-           coffeeComponent = DaggerCoffeeComponent.create()
+        coffeeComponent = DaggerCoffeeComponent.create()
         //coffeeComponent.getCoffee().getCoffeeCup()
 
         coffeeComponent.inject(this)
