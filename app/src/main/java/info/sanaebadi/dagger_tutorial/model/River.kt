@@ -6,6 +6,6 @@ class River  @Inject constructor(){
 
 
     fun getWater():String{
-        return "Water"
+        return "Water "
     }
 }
