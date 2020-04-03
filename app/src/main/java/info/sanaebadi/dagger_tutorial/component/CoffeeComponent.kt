@@ -13,8 +13,12 @@ interface CoffeeComponent {
 
     fun inject(mainActivity: MainActivity)
 
-    interface Builder{
 
+    @Component.Builder
+    interface Builder {
 
+        fun builder(): CoffeeComponent
+
+        fun sugar(sugar: Int): Builder
     }
 }
