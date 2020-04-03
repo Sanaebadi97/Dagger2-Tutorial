@@ -3,8 +3,9 @@ package info.sanaebadi.dagger_tutorial.model
 import android.util.Log
 import info.sanaebadi.dagger_tutorial.component.CoffeeComponent
 import javax.inject.Inject
+import javax.inject.Named
 
-class Coffee @Inject constructor(val river: River, val farm: Farm, val sugar: Int , val milk:Int) {
+class Coffee @Inject constructor(val river: River, val farm: Farm, @Named("sugar") val sugar: Int, @Named("milk") val milk:Int) {
 
 
     companion object {
