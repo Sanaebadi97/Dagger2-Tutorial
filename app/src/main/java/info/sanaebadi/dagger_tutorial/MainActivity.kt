@@ -11,7 +11,7 @@ import javax.inject.Inject
 class MainActivity : AppCompatActivity() {
 
 
-    //  lateinit var coffeeComponent: CoffeeComponent
+    lateinit var coffeeComponent: CoffeeComponent
 
     @Inject
     lateinit var coffee: Coffee
@@ -25,8 +25,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //   coffeeComponent = DaggerCoffeeComponent.create()
+           coffeeComponent = DaggerCoffeeComponent.create()
         //coffeeComponent.getCoffee().getCoffeeCup()
+
+        coffeeComponent.inject(this)
 
         coffee.getCoffeeCup()
 
