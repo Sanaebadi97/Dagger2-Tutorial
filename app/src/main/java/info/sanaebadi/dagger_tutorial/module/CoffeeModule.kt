@@ -5,7 +5,6 @@ import dagger.Provides
 import info.sanaebadi.dagger_tutorial.model.River
 
 
-
 @Module
 class CoffeeModule {
 
@@ -13,5 +12,11 @@ class CoffeeModule {
     @Provides
     fun provideRiver(): River {
         return River()
+    }
+
+
+    @Provides
+    fun providerSugar(): Int {
+        return 2
     }
 }
