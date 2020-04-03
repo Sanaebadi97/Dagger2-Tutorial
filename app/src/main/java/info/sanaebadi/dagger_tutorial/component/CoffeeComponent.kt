@@ -12,4 +12,9 @@ interface CoffeeComponent {
 
 
     fun inject(mainActivity: MainActivity)
+
+    interface Builder{
+
+
+    }
 }
