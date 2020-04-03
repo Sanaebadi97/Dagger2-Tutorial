@@ -8,8 +8,10 @@ import info.sanaebadi.dagger_tutorial.annotation.Sugar
 import info.sanaebadi.dagger_tutorial.model.Coffee
 import info.sanaebadi.dagger_tutorial.module.CoffeeModule
 import javax.inject.Named
+import javax.inject.Singleton
 
 
+@Singleton
 @Component(modules = [CoffeeModule::class])
 interface CoffeeComponent {
     fun getCoffee(): Coffee
