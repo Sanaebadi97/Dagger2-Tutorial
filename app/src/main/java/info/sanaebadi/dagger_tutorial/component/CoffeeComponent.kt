@@ -1,5 +1,6 @@
 package info.sanaebadi.dagger_tutorial.component
 
+import dagger.BindsInstance
 import dagger.Component
 import info.sanaebadi.dagger_tutorial.MainActivity
 import info.sanaebadi.dagger_tutorial.model.Coffee
@@ -17,8 +18,19 @@ interface CoffeeComponent {
     @Component.Builder
     interface Builder {
 
-        fun builder(): CoffeeComponent
 
+        /*
+
+        when use function with same like int , string ... u get  is bound multiple times: error so we use qualifiers
+         */
+
+        fun build(): CoffeeComponent
+
+        @BindsInstance
         fun sugar(sugar: Int): Builder
+
+
+        @BindsInstance
+        fun milk(milk: Int): Builder
     }
 }

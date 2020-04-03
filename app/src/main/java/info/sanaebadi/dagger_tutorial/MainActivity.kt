@@ -34,8 +34,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
        // coffeeComponent = DaggerCoffeeComponent.create()
-        coffeeComponent = DaggerCoffeeComponent.builder().coffeeModule(CoffeeModule(3)).build()
         //coffeeComponent.getCoffee().getCoffeeCup()
+      //  coffeeComponent = DaggerCoffeeComponent.builder().coffeeModule(CoffeeModule(3)).build()
+        coffeeComponent = DaggerCoffeeComponent.builder().sugar(4).milk(8).build()
 
         coffeeComponent.inject(this)
 

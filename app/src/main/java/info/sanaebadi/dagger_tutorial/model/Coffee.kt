@@ -4,7 +4,7 @@ import android.util.Log
 import info.sanaebadi.dagger_tutorial.component.CoffeeComponent
 import javax.inject.Inject
 
-class Coffee @Inject constructor(val river: River, val farm: Farm, val sugar: Int) {
+class Coffee @Inject constructor(val river: River, val farm: Farm, val sugar: Int , val milk:Int) {
 
 
     companion object {
@@ -14,7 +14,7 @@ class Coffee @Inject constructor(val river: River, val farm: Farm, val sugar: In
 
     fun getCoffeeCup(): String {
 
-        return "${farm.getBeans()} / ${river.getWater()} / $sugar"
+        return "${farm.getBeans()} / ${river.getWater()} / $sugar / $milk"
     }
 
 
