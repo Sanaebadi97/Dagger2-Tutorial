@@ -2,7 +2,13 @@ package info.sanaebadi.dagger_tutorial.model
 
 import javax.inject.Inject
 
-class Coffee  @Inject constructor(river: River,farm: Farm) {
+class Coffee @Inject constructor(river: River, farm: Farm) {
+
+
+    fun getCoffeeCup(): String {
+
+
+    }
 
 
 }
