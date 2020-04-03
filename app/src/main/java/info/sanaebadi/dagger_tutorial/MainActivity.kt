@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import info.sanaebadi.dagger_tutorial.component.CoffeeComponent
 import info.sanaebadi.dagger_tutorial.component.DaggerCoffeeComponent
 import info.sanaebadi.dagger_tutorial.model.Coffee
+import info.sanaebadi.dagger_tutorial.module.CoffeeModule
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        coffeeComponent = DaggerCoffeeComponent.create()
+       // coffeeComponent = DaggerCoffeeComponent.create()
+        coffeeComponent = DaggerCoffeeComponent.builder().coffeeModule(CoffeeModule(3)).build()
         //coffeeComponent.getCoffee().getCoffeeCup()
 
         coffeeComponent.inject(this)

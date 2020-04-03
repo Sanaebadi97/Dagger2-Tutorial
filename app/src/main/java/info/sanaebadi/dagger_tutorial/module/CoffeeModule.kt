@@ -6,7 +6,7 @@ import info.sanaebadi.dagger_tutorial.model.River
 
 
 @Module
-class CoffeeModule {
+class CoffeeModule constructor(val sugar:Int){
 
 
     @Provides
@@ -17,6 +17,6 @@ class CoffeeModule {
 
     @Provides
     fun providerSugar(): Int {
-        return 2
+        return sugar
     }
 }
