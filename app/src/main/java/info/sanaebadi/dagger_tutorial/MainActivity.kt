@@ -50,7 +50,9 @@ class MainActivity : AppCompatActivity() {
 
        var getCoffee= coffee.getCoffeeCup()
 
-        Log.i(TAG, "$getCoffee and \n ${coffee.farm} \n ${coffee2.farm}")
+        Log.i(TAG, "$getCoffee and \n ${coffee.farm} \n ${coffee2.farm} \n" +
+                " ${coffee.river} \n" +
+                " ${coffee2.river}")
 
     }
 }
