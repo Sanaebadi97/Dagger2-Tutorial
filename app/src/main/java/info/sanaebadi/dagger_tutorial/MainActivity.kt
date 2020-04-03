@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         coffeeComponent.inject(this)
 
         coffee.getCoffeeCup()
+//        coffee.connectElectricity()
 
         Log.i(TAG, coffee.getCoffeeCup())
 
