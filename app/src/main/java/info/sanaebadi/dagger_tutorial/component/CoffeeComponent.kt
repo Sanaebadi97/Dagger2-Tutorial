@@ -6,5 +6,5 @@ import info.sanaebadi.dagger_tutorial.model.Coffee
 
 @Component
 interface CoffeeComponent {
-    fun getCoffeeCup(): Coffee
+    fun getCoffee(): Coffee
 }

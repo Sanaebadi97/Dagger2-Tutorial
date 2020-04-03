@@ -1,12 +1,9 @@
 package info.sanaebadi.dagger_tutorial
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import info.sanaebadi.dagger_tutorial.component.CoffeeComponent
 import info.sanaebadi.dagger_tutorial.component.DaggerCoffeeComponent
-import info.sanaebadi.dagger_tutorial.model.Coffee
-import info.sanaebadi.dagger_tutorial.model.Farm
-import info.sanaebadi.dagger_tutorial.model.River
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         coffeeComponent = DaggerCoffeeComponent.create()
-        coffeeComponent.getCoffeeCup()
+        coffeeComponent.getCoffee()
 
     }
 }
