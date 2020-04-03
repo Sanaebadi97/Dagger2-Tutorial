@@ -15,7 +15,6 @@ import javax.inject.Inject
 
 class River  constructor(){
 
-
     fun getWater():String{
         return "Water "
     }
